@@ -1,0 +1,25 @@
+body{
+  margin: 40px 70px;
+}
+
+.main-container {
+    margin-top: 50px;
+    height: auto;
+    background-color: #F6F6F6;
+    padding: 25px 0 25px 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+    @media screen and (max-width: 768px) {
+
+      body {
+        margin: 30px;
+      }
+      .main-container {
+      margin-top: 10px;
+      padding:  0;
+      background-color: #ffffff;
+    }
+  }
