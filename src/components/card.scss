@@ -19,9 +19,9 @@
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         overflow: hidden;
-        transition: all 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
     
         img {
@@ -34,17 +34,13 @@
             position: absolute;
             bottom: 20px;
             left: 20px;
-    
-    
-            
             z-index: 1000;
             color: rgb(255, 255, 255);
-           
             font-family: Montserrat;
             font-size: 18px;
             font-weight: 700;
-            line-height: 25.67px;
-    
+            line-height: 26px;
+            
     
             
             

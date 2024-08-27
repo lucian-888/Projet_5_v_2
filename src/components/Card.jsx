@@ -1,5 +1,7 @@
 import './card.scss'
 
+
+
 function Card({title, image}) {
   
 
@@ -7,6 +9,7 @@ function Card({title, image}) {
         <div className="card">
             <img src={image} alt={title} />
             <p>{title}</p>
+            
         </div>
     )
   }
