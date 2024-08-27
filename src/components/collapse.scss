@@ -2,64 +2,60 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-}
-
-
-
-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    color: #ffffff;
-    background-color: rgb(245, 67, 91);
-    border-radius: 5px;
-    border-color: transparent;
-    width: 80%;
-    font-family: Montserrat;
-    font-size: 40px;
-    font-weight: 500;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    @media screen and (max-width: 768px){
-        font-size: 13px;
+    font-family: Montserrat, sans-serif;
+  
+    .collapse-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      color: #ffffff;
+      background-color: #FF6060;
+      border-radius: 5px;
+      border: none; 
+      width: 80%; 
+      font-size: 27px;
+      font-weight: 600;
+      padding: 10px 15px; 
+      margin: 10px 0;
+      cursor: pointer; 
+     
+  
+      @media screen and (max-width: 768px) {
+        font-size: 15px; 
+        padding: 8px 12px; 
+      }
     }
-}
-
-
-.arrow-icon {
-    transform:rotate(0);
-    height: 25px;
-    margin-left: 50px;
-    transition: all 0.3s;
-   
-    
-}
-
-.icon-rotate {
-    transform:rotate(180deg);
-
-}
-
-
-.collapse-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 77%;
-    cursor: pointer;
-    color: #0a0a0a;
-    padding: 22px;
-    font-size: 20px;
-    
-}
-
-
-
-   
   
-    
+    .arrow-icon {
+      transform:rotate(0);  
+      height: 30px;
+      margin-left: 15px; 
+      transition: all 0.3s;
   
+      &.icon-rotate {
+        transform: rotate(180deg);
+      }
+    }
   
-   
+    .collapse-content {
+      overflow: hidden;
+      transition: height 0.4s ease-in-out;
+      width: 77%;
+      
+
+      .collapse-inner {
+        background-color: #f9f9f9;
+        color: #0a0a0a;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 19px;
+      
+        @media screen and (max-width: 768px) {
+        font-size: 16px; 
+        padding: 15px; 
+      }
+    }  
+  }
+}
+  

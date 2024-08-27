@@ -1,45 +1,46 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 5px;
-    padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  padding-bottom: 15px;
 
-          picture{
-            width: 30%;
-            max-width: 170px;
-            img{
-              width: 100%;
-            }
-          }
-    .navbar {
-      @media screen and (max-width: 768px){
-        padding: 0;
-        display: flex;
-        align-items: center;
-      }
-     
-      a {
-        text-decoration: none;
-        color: black;
-        font-weight: 500;
-        font-size: 22px;
-        font-family: Montserrat;
-        margin: 0 10px;
+  picture {
+    width: 30%;
+    max-width: 170px;
 
-        @media screen and (max-width: 768px){
-          font-size: 12px;
-          text-transform: uppercase;
-        }
-
-        &.active {
-          text-decoration: underline;
-          text-underline-offset: 6px;
-        }
-        &:hover{
-          color: #f1356d;
-        }
-      }
+    img {
+      width: 100%;
+      height: auto; 
+    }
   }
- }
-    
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+      font-size: 24px;
+      font-family: Montserrat, sans-serif;
+      margin: 0 10px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      &.active {
+        text-decoration: underline;
+        text-underline-offset: 6px;
+      }
+
+      &:hover {
+        color: #f1356d;
+      }
+    }
+  }
+}

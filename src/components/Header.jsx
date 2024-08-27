@@ -18,7 +18,7 @@ function Header() {
         </picture>
         <div className="navbar">
             <NavLink to="/" >Accueil </NavLink>
-            <NavLink to="/about" >A propos </NavLink>
+            <NavLink to="/about" >A Propos </NavLink>
         </div>
     </header>
     </>
