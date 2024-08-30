@@ -1,0 +1,35 @@
+.logement {
+    font-family: Montserrat, sans-serif;
+
+    .title {
+    color:#FF6060;
+    }
+
+
+    .logement-collapse {
+        background-color: azure;
+        display: flex;
+        justify-content: space-between;
+       
+       
+
+        .collapse-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            color: #ffffff;
+            background-color: #FF6060;
+            border-radius: 5px;
+            border: none; 
+            width: auto; 
+            font-size: 19px;
+            font-weight: 600;
+            //padding: 10px 15px; 
+            //margin: 10px 0;
+            cursor: pointer; }
+
+    }   
+
+
+}

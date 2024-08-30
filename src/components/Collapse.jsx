@@ -3,7 +3,6 @@ import './collapse.scss'
 import arrowUp from '../assets/arrow_up.png'
 
 
-
 function Collapse({ name, elements }) {
   // État pour gérer l'ouverture/fermeture du collapse
   const [isOpen, setIsOpen] = useState(false);

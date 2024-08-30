@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './carousel.scss';
+import arrowLeft from '../assets/arrow_left.png'
+import arrowRight from '../assets/arrow_right.png'
 
 // Définition du composant Carousel qui prend un tableau 'pictures' comme prop
 function Carousel({ pictures }) {
@@ -30,24 +32,33 @@ function Carousel({ pictures }) {
     // Rendu du composant
     return (
       <div className="carousel">
-        {/* Bouton précédent */}
-        <button className="carousel__button carousel__button--prev" onClick={handlePrevClick}>
-          &#10094; {/* Code HTML pour la flèche gauche */}
-        </button>
+        
   
         {/* Conteneur de l'image */}
         <div className="carousel__image-container">
           {/* Affiche l'image correspondant à l'index courant */}
           <img src={pictures[currentIndex]} alt="carousel" className="carousel__image" />
+        
+
+      
+          <div className='carousel__buttons'>
+
+              {/* Bouton précédent */}
+              <button className="carousel__button carousel__button--prev" onClick={handlePrevClick}>
+              <img src={arrowLeft} alt="Arrow left" />
+              </button>
+              
+        
+              {/* Bouton suivant */}
+              <button className="carousel__button carousel__button--next" onClick={handleNextClick}>
+              <img src={arrowRight} alt="Arrow right" />
+              </button>
+              </div>
+
         </div>
-  
-        {/* Bouton suivant */}
-        <button className="carousel__button carousel__button--next" onClick={handleNextClick}>
-          &#10095; {/* Code HTML pour la flèche droite */}
-        </button>
       </div>
-    );
-  }
+  );
+}
   
 
 export default Carousel;

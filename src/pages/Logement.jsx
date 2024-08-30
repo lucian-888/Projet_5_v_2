@@ -2,41 +2,41 @@ import DataBase from '../data/data.json'
 import { useParams, useNavigate } from 'react-router-dom'
 import Erreur from './Erreur'
 import Carousel from '../components/Carousel'
-
+import Collapse from '../components/Collapse'
+import './logement.scss'
 
 function Logement() {
   
-const {id} = useParams();  // Extract the id from the URL
-const navigate = useNavigate(); // To handle navigation to the error page
+const {id} = useParams();   // Récupère l'ID de l'élément à partir de l'URL
+const navigate = useNavigate();  // Utilisé pour naviguer vers la page erreur
 
- // Find the element in the DataBase with the matching id
+  // Recherche l'élément correspondant à l'ID dans la base de données
  const logement = DataBase.find(element => element.id === id);
 
- // If no matching logement is found, navigate to the error page
+ // Si l'élément n'existe pas, redirige vers la page erreur
  if (!logement) {
-  navigate('/erreur');
+  navigate("*");
     return null; // Return null to avoid rendering anything before the navigation
  }  
 
- // If logement is found, render its details
+ // Si le logement est trouvé, afficher ses détails
  return (
-  <div>
-    <h1>{logement.title}</h1>
-    <Carousel pictures={logement.pictures} /> {/* Carousel for pictures */}
-    {/* Add other logement details here */}
+    <div className='logement'>
+    
+      <Carousel pictures={logement.pictures} /> 
+      <h1 className='title'>{logement.title}</h1>
+      <h2>host: name, picture</h2>
+      <h2>Location</h2>
+      <h2>Tags</h2>
+      <h2>Stars</h2>
+      <div className="logement-collapse">
+              <Collapse name='Descriptions' elements="ici descriptons"/>
+              < Collapse name='Equipements' elements="ici equipements" />
+      </div>
   </div>
 );
 }
     
     
     
-    
-    
-    
-  
-//if id de useParams est = avec id de logement utilise Find function
-//si Find ne trouve rien va a la page Erreur
-  
-  
-  
-  export default Logement
+export default Logement
