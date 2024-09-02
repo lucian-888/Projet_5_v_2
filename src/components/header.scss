@@ -3,11 +3,12 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-top: 5px;
+  margin-bottom: 35px;
   padding-bottom: 15px;
 
   picture {
     width: 30%;
-    max-width: 170px;
+    max-width: 200px;
 
     img {
       width: 100%;
@@ -19,6 +20,7 @@ header {
     display: flex;
     align-items: center;
     padding: 0;
+    gap: 30px;
 
     a {
       text-decoration: none;

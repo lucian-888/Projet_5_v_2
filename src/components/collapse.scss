@@ -4,8 +4,10 @@
     align-items: center;
     margin-top: 5px;
     font-family: Montserrat, sans-serif;
+    
   
     .collapse-button {
+      font-family: Montserrat, sans-serif;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -15,12 +17,12 @@
       border-radius: 5px;
       border: none; 
       width: 80%; 
-      font-size: 27px;
+      font-size: 23px;
       font-weight: 600;
       padding: 10px 15px; 
       margin: 10px 0;
       cursor: pointer; 
-     
+     margin-bottom: 0;
   
       @media screen and (max-width: 768px) {
         font-size: 15px; 
@@ -42,7 +44,9 @@
     .collapse-content {
       overflow: hidden;
       transition: height 0.4s ease-in-out;
-      width: 77%;
+      width: 80%;
+
+
       
 
       .collapse-inner {
@@ -50,7 +54,7 @@
         color: #0a0a0a;
         border-radius: 5px;
         padding: 20px;
-        font-size: 19px;
+        font-size: 18px;
       
         @media screen and (max-width: 768px) {
         font-size: 16px; 

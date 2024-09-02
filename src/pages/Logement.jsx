@@ -6,6 +6,7 @@ import Collapse from '../components/Collapse'
 import './logement.scss'
 import Tags from '../components/Tags'
 import HostInfo from '../components/HostInfo'
+import Stars from '../components/Stars'
 
 function Logement() {
   
@@ -27,15 +28,22 @@ const navigate = useNavigate();  // Utilisé pour naviguer vers la page erreur
     <div className='logement'>
     
       <Carousel pictures={logement.pictures} /> 
-      <h1 className='title'>{logement.title}</h1>
-      <HostInfo name={logement.host.name} picture={logement.host.picture} /> 
-      <h2>Location: {logement.location}</h2>
-      <h2>Rating: {logement.rating}</h2>
-      <Tags tags={logement.tags} />
+
+      <div className='host-info'>
+        <h1 className='title'>{logement.title}</h1>
+        <HostInfo name={logement.host.name} picture={logement.host.picture} /> 
+      </div>
+
+        <h2 className='location'>{logement.location}</h2>
+
+      <div className='tags-stars'>
+        <Tags tags={logement.tags} />
+        <Stars rating={logement.rating}/>
+      </div>
       
       <div className="logement-collapse">
               <Collapse name='Descriptions' elements={logement.description} />
-              <Collapse name='Equipements' elements={
+              <Collapse name='Équipements' elements={
                                             <ul>
                                               {logement.equipments.map((item, index) => (
                                                 <li key={index}>{item}</li>
@@ -45,7 +53,7 @@ const navigate = useNavigate();  // Utilisé pour naviguer vers la page erreur
                                           />
       </div>
 
-  </div>
+    </div>
 );
 }
     
