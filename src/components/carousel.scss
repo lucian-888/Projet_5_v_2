@@ -1,5 +1,4 @@
 .carousel {
-    
     margin-top: 50px;
     position: relative;
 
@@ -13,6 +12,16 @@
             height: 415px;
             border-radius: 20px;
             object-fit: cover;
+            }
+
+
+        .carousel__counter {
+            position: absolute;
+            bottom: 5%;
+            left: 45%;
+            right: 45%;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
             }
         
     }

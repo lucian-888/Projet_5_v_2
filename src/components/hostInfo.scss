@@ -1,0 +1,20 @@
+.host-info {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+
+    .host-name {
+        color: #FF6060;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .host-picture {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}

@@ -1,5 +1,6 @@
 .logement {
     font-family: Montserrat, sans-serif;
+    flex-grow: 1;
 
     .title {
     color:#FF6060;
@@ -7,29 +8,53 @@
 
 
     .logement-collapse {
-        background-color: azure;
         display: flex;
         justify-content: space-between;
+        gap: 60px;
+
+        .collapse {
+            flex: 1;
+            max-width: calc(50% - 10px);
+            
+        }
+        
        
        
 
         .collapse-button {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
             text-align: left;
             color: #ffffff;
             background-color: #FF6060;
             border-radius: 5px;
             border: none; 
-            width: auto; 
+            width: 100%; 
             font-size: 19px;
             font-weight: 600;
-            //padding: 10px 15px; 
-            //margin: 10px 0;
-            cursor: pointer; }
+            cursor: pointer; 
+            margin-bottom: 0;
+           
+        }
+
+        .collapse-content {
+            width: 100%;
+           
+        }
+
+        .collapse-inner {
+            width: 100%;
+            
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+           }
+
 
     }   
 
 
 }
+
