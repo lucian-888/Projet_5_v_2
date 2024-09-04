@@ -5,7 +5,7 @@ import arrowRight from '../assets/arrow_right.png';
 
 
 // Composant Carousel qui prend un tableau 'pictures' comme prop
-function Carousel({ pictures }) {
+function Carousel({ pictures, title }) {
   const [currentIndex, setCurrentIndex] = useState(0); // État pour l'index de l'image actuelle
 
   // Fonction pour gérer le clic sur le bouton précédent
@@ -27,7 +27,7 @@ function Carousel({ pictures }) {
       {/* Conteneur de l'image */}
       <div className="carousel__image-container">
         {/* Affiche l'image correspondant à l'index courant */}
-        <img src={pictures[currentIndex]} alt={`Image ${currentIndex + 1} of ${pictures.length}`} className="carousel__image" />
+        <img src={pictures[currentIndex]} alt={title} className="carousel__image" />
         
         {/* Compteur d'images */}
         {pictures.length > 1 && (
@@ -40,14 +40,14 @@ function Carousel({ pictures }) {
         {pictures.length > 1 && (
           <div className='carousel__buttons'>
             {/* Bouton précédent */}
-            <button className="carousel__button carousel__button--prev" onClick={handlePrevClick}>
+            <div className="carousel__button carousel__button--prev" onClick={handlePrevClick}>
               <img src={arrowLeft} alt="Arrow left" />
-            </button>
+            </div>
             
             {/* Bouton suivant */}
-            <button className="carousel__button carousel__button--next" onClick={handleNextClick}>
+            <div className="carousel__button carousel__button--next" onClick={handleNextClick}>
               <img src={arrowRight} alt="Arrow right" />
-            </button>
+            </div>
           </div>
         )}
       </div>

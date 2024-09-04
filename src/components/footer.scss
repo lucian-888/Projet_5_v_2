@@ -9,11 +9,20 @@ footer {
     justify-content: center;
     align-items: center;
     position: absolute;  
-  
+
+    @media screen and (max-width: 768px) {
+    height: 30%;
+    margin-top: 25px;
+    }
+
     img {
       margin-top: 66px;
       height: 39.44px;
       width: 122px;
+
+      @media screen and (max-width: 768px) {
+        margin-top: 0;
+      }
     }
   
     p {
@@ -26,6 +35,9 @@ footer {
   
       @media screen and (max-width: 768px) {
         font-size: 12px; 
+        padding-right: 100px;
+        padding-left: 100px;
+        margin-top: 10px;
       }
     }
   }

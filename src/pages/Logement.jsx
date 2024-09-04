@@ -25,7 +25,8 @@ const {id} = useParams();   // Récupère l'ID de l'élément à partir de l'URL
 
   return (
     <div className='logement'>
-      <Carousel pictures={logement.pictures} /> 
+      <Carousel pictures={logement.pictures} title={logement.title} /> 
+
 
       <div className='logement-info'>
         <div className='primary-info'>

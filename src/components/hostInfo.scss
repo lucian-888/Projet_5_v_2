@@ -4,11 +4,20 @@
     justify-content: end;
     gap: 10px;
 
+    @media screen and (max-width: 768px) {
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+
     .host-name {
         color: #FF6060;
         font-family: Montserrat;
         font-size: 18px;
         font-weight: 500;
+
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+        }
     }
 
     .host-picture {
@@ -16,5 +25,10 @@
         height: 55px;
         border-radius: 50%;
         object-fit: cover;
+
+        @media screen and (max-width: 768px) {
+            width: 30px;
+            height: 30px;
+        }
     }
 }

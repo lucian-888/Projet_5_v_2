@@ -1,4 +1,4 @@
-import './hostInfo.scss';
+import './hostinfo.scss';
 
 function HostInfo({ name, picture }) {
   // Split the name into two parts

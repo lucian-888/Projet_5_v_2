@@ -10,9 +10,8 @@
 
         @media screen and (max-width: 768px) {
             max-width: 50%;
+            margin-bottom: 55px;
         }
-
-       
     }
 
     p {
@@ -23,18 +22,23 @@
         margin-top: 85px;
 
         @media screen and (max-width: 768px) {
-            font-size: 17px;
-            
+            font-size: 15px;
+            margin: 0;
+            line-height: 20px;
+            margin-bottom: 55px;
+            margin-left: 38px;
+            margin-right: 38px;
         }
     }
 
     a {
         display: block;
         margin-top: 50px;
+        color: black;
 
         @media screen and (max-width: 768px) {
             font-size: 11px; 
-             
+            margin: 0;
         }
     }
 }

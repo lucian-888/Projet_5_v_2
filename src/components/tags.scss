@@ -1,5 +1,6 @@
 .logement-tag {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 
     button {
@@ -13,6 +14,15 @@
         margin-right: 4px;
         border: transparent;
         border-radius: 20px;
+
+        @media screen and (max-width: 768px) {
+            width: 84px; 
+            height: 18px; 
+            margin-right: 2px;   
+            padding: 2px;
+            font-size: 7px;
+            margin: 0;
+          }
         
     }
 }
