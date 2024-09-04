@@ -3,6 +3,7 @@ import './carousel.scss';
 import arrowLeft from '../assets/arrow_left.png';
 import arrowRight from '../assets/arrow_right.png';
 
+
 // Composant Carousel qui prend un tableau 'pictures' comme prop
 function Carousel({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0); // État pour l'index de l'image actuelle

@@ -21,7 +21,7 @@ function Home() {
                     return (  // Retourne le JSX pour chaque élément du tableau
                     //Création d'un lien (Link) pour chaque élément du tableau. 
                     //La classe CSS "card-link" est appliquée pour le style du lien.
-                    //Le lien redirige vers une URL spécifique enelement utilisant l'ID de l'élément (element.id) pour générer une URL dynamique.
+                    //Le lien redirige vers un URL spécifique à un élément utilisant l'ID de l'élément (element.id) pour générer un URL dynamique.
                     <Link className='card-link' to={`/logement/${element.id}`} key={index}>
                         {/*Insertion du composant "Card" à l'intérieur du lien.
                         Ce composant "Card" prend deux props : 

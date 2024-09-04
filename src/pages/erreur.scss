@@ -7,19 +7,34 @@
         max-width: 100%;
         height: auto;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 768px) {
+            max-width: 50%;
+        }
+
+       
     }
 
     p {
-        
         font-size: 36px;
         font-weight: 500;
         line-height: 51.34px;
         color: #FF6060;
         margin-top: 85px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 17px;
+            
+        }
     }
+
     a {
         display: block;
         margin-top: 50px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 11px; 
+             
+        }
     }
-    
 }
