@@ -9,24 +9,24 @@ import Stars from '../components/Stars'
 
 
 function Logement() {
-  
-const {id} = useParams();   // Récupère l'ID de l'élément à partir de l'URL
 
- // Recherche l'élément correspondant à l'ID dans la base de données
- const logement = DataBase.find(element => element.id === id);
+// Récupère l'ID de l'élément à partir de l'URL 
+const {id} = useParams();   
+
+// Recherche l'élément correspondant à l'ID dans la base de données
+const logement = DataBase.find(element => element.id === id);
 
  // Si l'élément n'existe pas, redirige vers la page erreur
- 
  if (!logement) {
   return <Navigate to="*"  />;
 }
  
-// Si le logement est trouvé, afficher ses détails
 
+// Si le logement est trouvé, afficher ses détails
   return (
+
     <div className='logement'>
       <Carousel pictures={logement.pictures} title={logement.title} /> 
-
 
       <div className='logement-info'>
         <div className='primary-info'>
@@ -52,9 +52,8 @@ const {id} = useParams();   // Récupère l'ID de l'élément à partir de l'URL
         } />
       </div>
     </div>
+
   );
 }
 
-    
-    
 export default Logement

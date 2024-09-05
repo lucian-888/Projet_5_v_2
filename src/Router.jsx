@@ -6,20 +6,23 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Logement from './pages/Logement'
 
+
 function Router() {
   
 
   return (
+
     <>
-    <Header/>
-    <Routes>
-        <Route path="/" element={<Home />}  />
-        <Route path="/about" element={<About />}  />
-        <Route path="/logement/:id" element={<Logement />}  />
-        <Route path="*" element={<Erreur />}  />
-    </Routes> 
-    <Footer/>
-    </>   
+      <Header/>
+      <Routes>
+          <Route path="/" element={<Home />}  />
+          <Route path="/about" element={<About />}  />
+          <Route path="/logement/:id" element={<Logement />}  />
+          <Route path="*" element={<Erreur />}  />
+      </Routes> 
+      <Footer/>
+    </>  
+     
   )
 }
 

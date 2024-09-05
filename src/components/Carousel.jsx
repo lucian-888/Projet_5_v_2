@@ -4,7 +4,7 @@ import arrowLeft from '../assets/arrow_left.png';
 import arrowRight from '../assets/arrow_right.png';
 
 
-// Composant Carousel qui prend un tableau 'pictures' comme prop
+// Composant Carousel qui prend un tableau 'pictures' et 'title' comme props
 function Carousel({ pictures, title }) {
   const [currentIndex, setCurrentIndex] = useState(0); // État pour l'index de l'image actuelle
 
@@ -22,7 +22,9 @@ function Carousel({ pictures, title }) {
     setCurrentIndex(newIndex);
   };
 
+
   return (
+    
     <div className="carousel">
       {/* Conteneur de l'image */}
       <div className="carousel__image-container">
@@ -52,6 +54,7 @@ function Carousel({ pictures, title }) {
         )}
       </div>
     </div>
+    
   );
 }
 

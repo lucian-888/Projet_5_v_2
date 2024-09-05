@@ -3,6 +3,10 @@
     flex-wrap: wrap;
     gap: 10px;
 
+    @media screen and (max-width: 768px) {
+       gap: 4px;
+    }
+
     button {
         background-color: #FF6060;
         color: white;
@@ -13,16 +17,17 @@
         height: 25px;
         margin-right: 4px;
         border: transparent;
-        border-radius: 20px;
+        border-radius: 8px;
 
         @media screen and (max-width: 768px) {
-            width: 84px; 
+            width: 75px; 
             height: 18px; 
-            margin-right: 2px;   
+            margin-right: 1px;   
             padding: 2px;
-            font-size: 7px;
+            font-size: 6px;
             margin: 0;
-          }
+            border-radius: 4px;
+        }
         
     }
 }

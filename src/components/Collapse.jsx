@@ -22,16 +22,15 @@ function Collapse({ name, elements }) {
     }
   }, [isOpen]); // Dépendance : isOpen
 
+
   return (
+
     <div className="collapse">
-      {/* Bouton pour ouvrir/fermer le collapse */}
       <button 
         onClick={() => setIsOpen(!isOpen)} 
         className="collapse-button"
       >
-        {/* Nom du collapse */}
         <span className="collapse-name">{name}</span>
-        {/* Icône de flèche qui tourne quand le collapse est ouvert */}
         <img 
           src={arrowUp} 
           alt="Arrow icon"
@@ -51,6 +50,7 @@ function Collapse({ name, elements }) {
         </div>
       </div>
     </div>
+    
   );
 }
 
