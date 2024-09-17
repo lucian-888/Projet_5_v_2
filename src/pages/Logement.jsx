@@ -32,7 +32,13 @@ const logement = DataBase.find(element => element.id === id);
         <div className='primary-info'>
           <h1 className='title'>{logement.title}</h1>
           <h2 className='location'>{logement.location}</h2>
-          <Tags tags={logement.tags} />
+          
+          <div className="logement-tag">
+          {logement.tags.map((tag, index) => (
+            // Création d'un bouton pour chaque tag
+            <Tags key={index} tag={tag} />
+          ))}
+          </div>
         </div>
 
         <div className='secondary-info'>

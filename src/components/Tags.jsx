@@ -1,20 +1,19 @@
 import './tags.scss'
 
 
-function Tags({ tags }) {
-  
+function Tag({ tag }) {
 
-    return (
 
-        <div className="logement-tag">
-          {/* Utilisation de la méthode map() pour parcourir le tableau 'tags'.*/}
-          {tags.map((tag, index) => (
-            // Création d'un bouton pour chaque tag
-            <button key={index}>{tag}</button>
-          ))}
-        </div>
+  return (
 
-    );
+
+
+
+    // Création d'un bouton pour chaque tag
+    <button >{tag}</button>
+
+
+  );
 }
-  
-export default Tags
+
+export default Tag
